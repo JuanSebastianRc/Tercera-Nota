@@ -1,21 +1,31 @@
-import java.util.Scanner;
 public class salaries {
     public String name;       
     private double salary;    
     protected String role;    
 
-    int level;  
-
-    public public void setSalary(double salary) {
+    public salaries(String name, double salary, String role){
+        this.name = name;
         this.salary = salary;
-        if (salary>0) {
-            System.out.println();
-        }else{
-            System.out.println();
+        this.role = role;
+}
+    
+    public String getName() {
+        return name;
     }
 
-     public double getSalary() {
-        return salary;
+    public void setName(String name) {
+        this.name = name;
     }
-  }
+
+          public double getSalar() {
+        return salar;
+    }
+
+    public setSalaries(double salar) {
+        if (salar>0) {
+            salary+= salar;
+        }else{
+            System.out.println("el monto es menor al esperado");
+    }
+
 }
